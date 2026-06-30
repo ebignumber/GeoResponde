@@ -1,4 +1,4 @@
-export type LayerCategory = 'Scientific' | 'Infrastructure' | 'Humanitarian' | 'Logistics' | 'Community' | 'Earthquakes' | 'Geology' | 'Satellite' | 'Hazards';
+﻿export type LayerCategory = 'Scientific' | 'Infrastructure' | 'Humanitarian' | 'Logistics' | 'Community' | 'Earthquakes' | 'Geology' | 'Satellite' | 'Hazards';
 
 export interface HumanitarianProvider {
   id: string;

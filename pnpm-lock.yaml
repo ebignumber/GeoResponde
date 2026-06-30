@@ -46,7 +46,7 @@ importers:
         specifier: ^11.2.0
         version: 11.2.0
       '@georesponde/shared':
-        specifier: link:..\packages\shared
+        specifier: workspace:*
         version: link:../packages/shared
       fastify:
         specifier: ^5.8.5
@@ -74,7 +74,7 @@ importers:
         specifier: workspace:*
         version: link:../packages/client
       '@georesponde/shared':
-        specifier: link:..\packages\shared
+        specifier: workspace:*
         version: link:../packages/shared
       i18next:
         specifier: ^26.3.3
@@ -138,7 +138,7 @@ importers:
   packages/catalog:
     dependencies:
       '@georesponde/shared':
-        specifier: link:..\shared
+        specifier: workspace:*
         version: link:../shared
       ajv:
         specifier: ^8.12.0

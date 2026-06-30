@@ -6,9 +6,10 @@ import { useTranslation } from 'react-i18next';
 interface Props {
   activeLayerIds: Set<string>;
   onToggleLayer: (id: string) => void;
+  unavailableLayerIds?: Set<string>;
 }
 
-export function Sidebar({ activeLayerIds, onToggleLayer }: Props) {
+export function Sidebar({ activeLayerIds, onToggleLayer, unavailableLayerIds = new Set() }: Props) {
   const { layers, datasets, loading, error } = useCatalog();
   const [openCategories, setOpenCategories] = useState<Set<string>>(new Set(['Infrastructure', 'Humanitarian', 'Logistics', 'Community']));
   const { t } = useTranslation();
@@ -54,7 +55,8 @@ export function Sidebar({ activeLayerIds, onToggleLayer }: Props) {
                     layer={layer}
                     dataset={datasets.find(d => layer.datasetIds?.includes(d.id))}
                     isActive={activeLayerIds.has(layer.id)} 
-                    onToggle={onToggleLayer} 
+                    onToggle={onToggleLayer}
+                    isUnavailable={unavailableLayerIds.has(layer.id)}
                   />
                 ))}
               </div>
@@ -91,7 +93,8 @@ export function Sidebar({ activeLayerIds, onToggleLayer }: Props) {
                             layer={layer}
                             dataset={datasets.find(d => layer.datasetIds?.includes(d.id))}
                             isActive={activeLayerIds.has(layer.id)} 
-                            onToggle={onToggleLayer} 
+                            onToggle={onToggleLayer}
+                            isUnavailable={unavailableLayerIds.has(layer.id)}
                           />
                         ))}
                       </div>

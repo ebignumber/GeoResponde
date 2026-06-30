@@ -9,11 +9,12 @@
   },
   "scripts": {
     "build": "tsc",
+    "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "dev": "tsc --watch"
   },
   "dependencies": {
-    "@georesponde/shared": "link:..\\shared",
+    "@georesponde/shared": "workspace:*",
     "ajv": "^8.12.0",
     "ajv-formats": "^3.0.1",
     "commander": "^12.0.0",

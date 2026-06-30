@@ -6,12 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "@georesponde/client": "workspace:*",
-    "@georesponde/shared": "link:..\\packages\\shared",
+    "@georesponde/shared": "workspace:*",
     "i18next": "^26.3.3",
     "i18next-browser-languagedetector": "^8.2.1",
     "lucide-react": "^0.475.0",

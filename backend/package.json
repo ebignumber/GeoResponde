@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +15,7 @@
   "type": "module",
   "dependencies": {
     "@fastify/cors": "^11.2.0",
-    "@georesponde/shared": "link:..\\packages\\shared",
+    "@georesponde/shared": "workspace:*",
     "fastify": "^5.8.5",
     "turbo-stream": "^3.2.0"
   },

@@ -9,9 +9,11 @@ import { useArcGISFeatureLayer } from '../../hooks/useArcGISFeatureLayer';
 import { useRef } from 'react';
 interface Props {
   activeLayerIds: Set<string>;
+  unavailableLayerIds?: Set<string>;
+  setUnavailableLayerIds?: (ids: Set<string>) => void;
 }
 
-export function MapViewer({ activeLayerIds }: Props) {
+export function MapViewer({ activeLayerIds, unavailableLayerIds = new Set() }: Props) {
   const { layers } = useCatalog();
   const mapRef = useRef<MapRef>(null);
   
@@ -318,6 +320,10 @@ export function MapViewer({ activeLayerIds }: Props) {
         [">", ["index-of", "BUCARAMANGA", ["upcase", ["coalesce", ["get", "name"], ""]]], -1],
         [">", ["index-of", "CARIBBEAN", ["upcase", ["coalesce", ["get", "name"], ""]]], -1]
       ];
+
+      if (unavailableLayerIds.has(layer.id)) {
+        return null;
+      }
 
       return (
         <Source key={layer.id} id={layer.id} {...sourceProps}>

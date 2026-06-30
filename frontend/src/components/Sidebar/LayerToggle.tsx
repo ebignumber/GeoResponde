@@ -7,9 +7,10 @@ interface Props {
   dataset?: any;
   isActive: boolean;
   onToggle: (id: string) => void;
+  isUnavailable?: boolean;
 }
 
-export function LayerToggle({ layer, dataset, isActive, onToggle }: Props) {
+export function LayerToggle({ layer, dataset, isActive, onToggle, isUnavailable = false }: Props) {
   const { i18n, t } = useTranslation();
   
   // Determine icon based on category
@@ -42,8 +43,9 @@ export function LayerToggle({ layer, dataset, isActive, onToggle }: Props) {
             {displayDescription}
           </div>
         )}
-        <div className="layer-meta">
+        <div className="layer-meta" style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
           <span className="layer-badge">{t(`sidebar.confidence.${layer.confidence}`) || layer.confidence}</span>
+          {isUnavailable && <span className="layer-badge" style={{ backgroundColor: '#ef4444', color: 'white' }}>Unavailable</span>}
         </div>
       </div>
     </div>
