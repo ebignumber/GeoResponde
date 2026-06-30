@@ -1,7 +1,10 @@
 import path from 'path';
-import { readYaml } from '../utils/fs';
-import { Organization, Source, Dataset, Layer } from '../types';
+import { readYaml } from '../utils/fs.js';
+import { Organization, Source, Dataset, Layer } from '../types/index.js';
 import { HumanitarianProvider } from '@georesponde/shared';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const CATALOG_DIR = path.resolve(__dirname, '../../../../data/catalog');
 

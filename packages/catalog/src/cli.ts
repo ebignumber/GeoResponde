@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import { Command } from 'commander';
-import { buildCatalog, validateCatalog } from './index';
+import { buildCatalog, validateCatalog } from './index.js';
 
 const program = new Command();
 

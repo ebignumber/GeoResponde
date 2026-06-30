@@ -1,4 +1,4 @@
-import { CatalogData } from '../types';
+import { CatalogData } from '../types/index.js';
 
 export function validateRelations(catalog: CatalogData): void {
   const { organizations, sources, datasets, layers } = catalog;

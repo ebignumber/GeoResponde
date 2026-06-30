@@ -1,11 +1,11 @@
 import path from 'path';
-import { loadOrganizations, loadSources, loadDatasets, loadLayers, loadProviders } from './loaders';
-import { validateSchemas } from './validators/schema';
-import { validateRelations } from './validators/relations';
-import { buildSearchIndex } from './indexers/search';
-import { writeJson } from './utils/fs';
+import { loadOrganizations, loadSources, loadDatasets, loadLayers, loadProviders } from './loaders/index.js';
+import { validateSchemas } from './validators/schema.js';
+import { validateRelations } from './validators/relations.js';
+import { buildSearchIndex } from './indexers/search.js';
+import { writeJson } from './utils/fs.js';
 
-export * from './types';
+export * from './types/index.js';
 
 export async function validateCatalog() {
   console.log('Loading catalog data...');

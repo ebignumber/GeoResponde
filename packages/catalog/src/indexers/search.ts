@@ -1,4 +1,4 @@
-import { CatalogData, SearchIndexEntry } from '../types';
+import { CatalogData, SearchIndexEntry } from '../types/index.js';
 
 export function buildSearchIndex(catalog: CatalogData): SearchIndexEntry[] {
   const index: SearchIndexEntry[] = [];
