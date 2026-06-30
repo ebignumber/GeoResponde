@@ -3,7 +3,9 @@ import { TopNav } from './components/Navigation/TopNav';
 import { Situation } from './pages/Situation';
 import { Find } from './pages/Find';
 import { Report } from './pages/Report';
+import { About } from './pages/About';
 import { ProviderStatus } from './pages/Dev/ProviderStatus';
+import { Footer } from './components/layout/Footer';
 
 function App() {
   return (
@@ -15,8 +17,10 @@ function App() {
           <Route path="/situation" element={<Situation />} />
           <Route path="/find" element={<Find />} />
           <Route path="/report" element={<Report />} />
+          <Route path="/about" element={<About />} />
           <Route path="/dev/providers" element={<ProviderStatus />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

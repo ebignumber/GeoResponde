@@ -2,11 +2,13 @@
   "nav": {
     "situation": "Situación",
     "find": "Buscar",
-    "report": "Reportar"
+    "report": "Reportar",
+    "about": "Acerca de"
   },
   "sidebar": {
     "title": "GeoResponde",
-    "subtitle": "Terremoto Venezuela 2026",
+    "subtitle": "Sala de Situación Geoespacial Abierta",
+    "currentEvent": "Evento Actual: Terremoto Venezuela 2026",
     "loading": "Cargando catálogo...",
     "error": "Error al cargar el catálogo.",
     "situationLayers": "Capas de Situación",
@@ -30,7 +32,7 @@
   },
   "find": {
     "title": "Buscar Personas y Recursos",
-    "subtitle": "Busca en múltiples organizaciones humanitarias confiables simultáneamente.",
+    "subtitle": "Busca simultáneamente en múltiples organizaciones humanitarias confiables.",
     "placeholder": "Buscar personas, edificios, hospitales, refugios...",
     "examples": "Ejemplos rápidos:",
     "button": "Buscar",
@@ -52,5 +54,92 @@
     "redirectTitle": "Continúa en la plataforma oficial de reportes",
     "redirectText": "Para asegurar la integridad de los datos y evitar la fragmentación, GeoResponde no almacena reportes directamente. Te redirigiremos a la plataforma de la organización autorizada donde tu reporte será manejado y verificado adecuadamente.",
     "goToOfficial": "Ir a la Plataforma Oficial ↗"
+  },
+  "about": {
+    "title": "GeoResponde",
+    "subtitle": "Sala de Situación Geoespacial Abierta",
+    "mission": {
+      "title": "Misión",
+      "p1": "GeoResponde conecta la inteligencia científica y la información humanitaria en una imagen operativa unificada durante desastres.",
+      "p2": "En lugar de crear otra base de datos aislada, GeoResponde federa información confiable de organizaciones existentes preservando la propiedad de los datos."
+    },
+    "whyExists": {
+      "title": "Por qué existe GeoResponde",
+      "p1": "Durante los desastres la información se fragmenta.",
+      "p2": "Las familias buscan en múltiples sitios web.",
+      "p3": "Las organizaciones duplican esfuerzos.",
+      "p4": "Los científicos y socorristas a menudo trabajan con sistemas desconectados.",
+      "p5": "GeoResponde existe para conectar esos mundos."
+    },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "p1": "Tres pilares:",
+      "pillar1": "Situación",
+      "pillar1sub": "- Inteligencia Científica",
+      "p1_1": "Sismos",
+      "p1_2": "Geología",
+      "p1_3": "Productos satelitales",
+      "p1_4": "Peligros",
+      "pillar2": "Buscar",
+      "pillar2sub": "- Red Humanitaria",
+      "p2_1": "Búsqueda federada",
+      "p2_2": "Personas desaparecidas",
+      "p2_3": "Hospitales",
+      "p2_4": "Refugios",
+      "p2_5": "Recursos",
+      "pillar3": "Reportar",
+      "pillar3sub": "- Operaciones",
+      "p3_1": "Reporte de incidentes federado",
+      "p3_2": "Próximamente"
+    },
+    "openSource": {
+      "title": "Código Abierto",
+      "p1": "GeoResponde se desarrolla como un proyecto de código abierto porque la respuesta a desastres se beneficia de la transparencia, la colaboración y la interoperabilidad.",
+      "p2": "Todos pueden inspeccionar el código. Las organizaciones siguen siendo propietarias de sus propios datos."
+    },
+    "status": {
+      "title": "Estado Actual",
+      "situation": "Situación",
+      "beta": "Beta",
+      "find": "Buscar",
+      "experimental": "Experimental",
+      "report": "Reportar",
+      "inDev": "En Desarrollo"
+    },
+    "developedBy": {
+      "title": "Desarrollado Por",
+      "contributors": "Contribuidores de GeoResponde",
+      "author": "Proyecto iniciado por Daniel (Napo) Arraiz.",
+      "community": "Las contribuciones de la comunidad son bienvenidas."
+    },
+    "principles": {
+      "title": "Nuestros Principios",
+      "p1_title": "Federación sobre duplicación:",
+      "p1_text": "Conectamos sistemas existentes en lugar de crear bases de datos concurrentes.",
+      "p2_title": "La propiedad de los datos pertenece a los proveedores:",
+      "p2_text": "Las organizaciones siempre son la fuente autorizada.",
+      "p3_title": "Abierto por defecto:",
+      "p3_text": "La transparencia genera confianza.",
+      "p4_title": "La ciencia apoya la respuesta humanitaria:",
+      "p4_text": "La inteligencia científica debe mejorar las decisiones operativas.",
+      "p5_title": "Interoperabilidad primero:",
+      "p5_text": "Los estándares abiertos permiten la colaboración."
+    },
+    "disclaimer": {
+      "title": "Aviso legal de datos",
+      "p1": "GeoResponde no es propietario de los registros humanitarios.",
+      "p2": "GeoResponde federa información públicamente disponible o autorizada por el proveedor.",
+      "p3": "Cada proveedor sigue siendo responsable de sus propios datos.",
+      "p4": "La información crítica siempre debe ser confirmada con la organización de origen."
+    },
+    "philosophy": {
+      "title": "Filosofía de Proveedores",
+      "subtitle": "GeoResponde prioriza:",
+      "li1": "APIs Oficiales",
+      "li2": "Autorización del proveedor",
+      "li3": "Atribución adecuada",
+      "li4": "Enlaces directos a los proveedores",
+      "li5": "Evitar duplicaciones innecesarias"
+    }
   }
 }

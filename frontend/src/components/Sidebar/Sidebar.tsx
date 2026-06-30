@@ -34,6 +34,7 @@ export function Sidebar({ activeLayerIds, onToggleLayer, unavailableLayerIds = n
       <div className="sidebar-header">
         <h1 className="sidebar-title">{t('sidebar.title')}</h1>
         <p className="sidebar-subtitle">{t('sidebar.subtitle')}</p>
+        <p style={{ fontSize: '12px', color: '#94a3b8', marginTop: '4px', fontStyle: 'italic' }}>{t('sidebar.currentEvent')}</p>
       </div>
       
       <div className="sidebar-content">
