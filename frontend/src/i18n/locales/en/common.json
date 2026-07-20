@@ -334,5 +334,12 @@
             "statelessNote": "Health history lives in the gateway's memory and resets on every redeploy; if the gateway runs on more than one instance, readings can differ between them. This is a best-effort, in-memory view — not a durable record.",
             "loading": "Loading providers…"
         }
+    },
+    "providersList": {
+        "title": "Data Sources",
+        "subtitle": "Directory of integrated humanitarian organizations feeding data into GeoResponde.",
+        "statusConnected": "Connected",
+        "statusIssues": "Temporarily Unavailable",
+        "visitWebsite": "Visit Website"
     }
 }
